@@ -1,0 +1,15 @@
+<!-- In footer.ejs -->
+<tbody>
+  <!-- Check if contacts is defined and has data -->
+  <% if (typeof contacts !== 'undefined' && contacts.length > 0) { %>
+      <% contacts.forEach(function(contact) { %>
+          <tr onclick="window.location.href='/detail/<%= contact._id %>'" style="cursor: pointer;">
+              <td><%= contact.name %></td>
+          </tr>
+      <% }); %>
+  <% } else { %>
+      <tr>
+          <td colspan="2">No contacts available.</td>
+      </tr>
+  <% } %>
+</tbody>

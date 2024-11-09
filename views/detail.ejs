@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chi Tiết Người Dùng</h1>
+        <ul>
+            <li><strong>Tên:</strong> <%= user.name %></li>
+            <li><strong>Email:</strong> <%= user.email %></li>
+            <li><strong>Số ĐT:</strong> <%= user.phone %></li>
+            <li><strong>Địa Chỉ TP:</strong> <%= user.city %></li>
+            <li><strong>Chức Vụ:</strong> <%= user.role %></li>
+            <li><strong>Tuổi:</strong> <%= user.age %></li>
+        </ul>
+        <a href="/" class="btn btn-primary">Quay lại</a>
+    </div>
+</body>
+</html>

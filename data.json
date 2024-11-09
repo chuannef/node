@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Van A",
+    "email": "va@gmail.com",
+    "phone": "0243431111",
+    "city": "Đà Nẵng",
+    "role": "Nhân viên",
+    "age": 30
+  },
+  {
+    "name": "Van B",
+    "email": "vb@gmail.com",
+    "phone": "0243432222",
+    "city": "Hà Nội",
+    "role": "Trưởng phòng",
+    "age": 35
+  },
+  {
+    "name": "Van C",
+    "email": "vc@gmail.com",
+    "phone": "0243433333",
+    "city": "Hồ Chí Minh",
+    "role": "Giám đốc",
+    "age": 40
+  },
+  {
+    "name": "Van D",
+    "email": "vd@gmail.com",
+    "phone": "0243434444",
+    "city": "Đà Nẵng",
+    "role": "Nhân viên",
+    "age": 28
+  },
+  {
+    "name": "Van E",
+    "email": "ve@gmail.com",
+    "phone": "0243435555",
+    "city": "Hà Nội",
+    "role": "Trưởng phòng",
+    "age": 32
+  }
+]

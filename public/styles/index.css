@@ -1,0 +1,20 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+b {
+  color: red;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}

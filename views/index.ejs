@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quản Lý Danh Bạ</h1>
+        <form action="/search" method="POST">
+            <div class="form-group">
+                <label for="nameEmail">Tìm hoặc Email:</label>
+                <input type="text" name="nameEmail" class="form-control" id="nameEmail">
+            </div>
+            <div class="form-group">
+                <label for="role">Chức Vụ:</label>
+                <select name="role" class="form-control" id="role">
+                    <option value="">Chọn</option>
+                    <option value="Nhân Viên">Nhân Viên</option>
+                    <option value="Trưởng Phòng">Trưởng Phòng</option>
+                    <option value="Giám Đốc">Giám Đốc</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ageFrom">Tuổi:</label>
+                <input type="number" name="ageFrom" class="form-control" id="ageFrom" placeholder="Từ">
+                <input type="number" name="ageTo" class="form-control" id="ageTo" placeholder="Đến">
+            </div>
+            <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+        </form>
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Tên</th>
+                    <th>Email</th>
+                    <th>Số ĐT</th>
+                    <th>Địa Chỉ TP</th>
+                    <th>Chức Vụ</th>
+                    <th>Tuổi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% users.forEach(user => { %>
+                    <tr onclick="window.location='/detail/<%= user._id %>'">
+                        <td><%= user.name %></td>
+                        <td><%= user.email %></td>
+                        <td><%= user.phone %></td>
+                        <td><%= user.city %></td>
+                        <td><%= user.role %></td>
+                        <td><%= user.age %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
